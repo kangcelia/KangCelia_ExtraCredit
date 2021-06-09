@@ -14,3 +14,38 @@ ul {
 		list-style: none;
 	}
 }
+
+main {
+	display: grid;
+	grid-template-areas:
+		"header"
+		"hero"
+		"who"
+		"meet"
+		"talk"
+		"footer"
+}
+
+.header {
+	grid-area: header;
+}
+
+.hero {
+	grid-area: hero;
+}
+
+.who {
+	grid-area: who;
+}
+
+.meet {
+	grid-area: meet;
+}
+
+.talk {
+	grid-area: talk;
+}
+
+.footer {
+	grid-area: footer;
+}
