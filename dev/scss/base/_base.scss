@@ -120,4 +120,29 @@ main {
 
 .footer {
 	grid-area: footer;
+
+	@include md {
+
+		.footergrid {
+			display: grid;
+			grid-template-columns: repeat(9, 1fr);
+			padding-bottom: 50px;
+
+			.footergrid {
+				grid-column: 2 / 3;
+			}
+
+			address {
+				grid-column: 4 / 5;
+			}
+
+			p {
+				grid-column: 6 / 7;
+			}
+
+			.fbicon {
+				grid-column: 9 / 10;
+			}
+		}
+	}
 }

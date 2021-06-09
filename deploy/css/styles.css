@@ -454,6 +454,25 @@ main {
 .footer {
   grid-area: footer;
 }
+@media (min-width: 768px) {
+  .footer .footergrid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    padding-bottom: 50px;
+  }
+  .footer .footergrid .footergrid {
+    grid-column: 2/3;
+  }
+  .footer .footergrid address {
+    grid-column: 4/5;
+  }
+  .footer .footergrid p {
+    grid-column: 6/7;
+  }
+  .footer .footergrid .fbicon {
+    grid-column: 9/10;
+  }
+}
 
 /* =============
     Typography
