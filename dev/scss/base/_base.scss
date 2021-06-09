@@ -28,6 +28,18 @@ main {
 
 .header {
 	grid-area: header;
+	display: grid;
+
+	@include md {
+		.headerlogo {
+			justify-content: left;
+		}
+
+		.topnav {
+			justify-content: right;
+		}
+	}
+	
 }
 
 .hero {
@@ -40,10 +52,70 @@ main {
 
 .meet {
 	grid-area: meet;
+	display: grid;
+
+	@include md {
+		h1 {
+			text-align: center;
+			padding-bottom: 20px;
+			padding-top: 100px;
+		}
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+
+			.meet1 {
+				grid-column: 2 / 3;
+				grid-row: 1 / 2;
+				padding-bottom: 20px;
+			}
+
+			.meet2 {
+				grid-column: 4 / 5;
+				grid-row: 1 / 2;
+			}
+
+			.meet3 {
+				grid-column: 6 / 7;
+				grid-row: 1 / 2;
+			}
+
+			.meet4 {
+				grid-column: 2 / 3;
+				grid-row: 2 / 3;
+			}
+
+			.meet5 {
+				grid-column: 4 / 5;
+				grid-row: 2 / 3;
+			}
+
+			.meet6 {
+				grid-column: 6 / 7;
+				grid-row: 2 / 3;
+			}
+		}
+	}
 }
 
 .talk {
 	grid-area: talk;
+
+	@include md {
+		display: grid;
+
+		h2 {
+			text-align: center;
+			padding-top: 100px;
+			padding-bottom: 10px;
+		}
+
+		p {
+			text-align: center;
+			padding-bottom: 100px;
+		}
+	}
 }
 
 .footer {
