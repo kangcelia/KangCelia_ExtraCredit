@@ -8,3 +8,13 @@
 @import "base/_normalize";
 @import "base/_base";
 @import "base/_typography";
+
+// Layout Styles
+@import "layout/_header";
+@import "layout/_footer";
+
+// Content Styles
+@import "content/_hero";
+@import "content/_who";
+@import "content/_meet";
+@import "content/_talk";
