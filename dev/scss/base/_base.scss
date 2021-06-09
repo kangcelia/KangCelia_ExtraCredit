@@ -37,19 +37,38 @@ main {
 		display: grid;
 
 		img {
-			float: left;
-			height: 600px;
-			width: 500px;
-			font-family: Veranda;
+			padding-bottom: 30px;
+			display: block;
+            margin-left: auto;
+            margin-right: auto;
 		}
 		.hero-text {
-			float: right;
+			text-align: center;
+			padding-bottom: 100px;
 		}
 	}
 }
 
 .who {
 	grid-area: who;
+
+	@include md {
+		img {
+			padding-top: 100px;
+			padding-bottom: 30px;
+			display: block;
+            margin-left: auto;
+            margin-right: auto;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+		}
+	}
 }
 
 .meet {
