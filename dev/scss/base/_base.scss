@@ -28,22 +28,24 @@ main {
 
 .header {
 	grid-area: header;
-	display: grid;
-
-	@include md {
-		.headerlogo {
-			justify-content: left;
-		}
-
-		.topnav {
-			justify-content: right;
-		}
-	}
-	
 }
 
 .hero {
 	grid-area: hero;
+
+	@include md {
+		display: grid;
+
+		img {
+			float: left;
+			height: 600px;
+			width: 500px;
+			font-family: Veranda;
+		}
+		.hero-text {
+			float: right;
+		}
+	}
 }
 
 .who {
@@ -127,6 +129,7 @@ main {
 			display: grid;
 			grid-template-columns: repeat(9, 1fr);
 			padding-bottom: 50px;
+			padding-top: 50px;
 
 			.footergrid {
 				grid-column: 2 / 3;
